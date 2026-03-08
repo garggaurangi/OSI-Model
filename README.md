@@ -24,5 +24,5 @@ This is what happens at each layer :
 
 Each layer removes it's headers until the application receives the original message.
 
-## Enjoy the animation!
+## Enjoy the Animation!
 
