@@ -1,11 +1,14 @@
 # OSI-Model
-OSI Model animation in graphics.h
 
-I wrote this animation to create a visual representation of the message encapsulation and decapsulation as the message travels through the OSI layers.
+I wrote this animation in C++ using graphics.h library to create a visual representation of the message encapsulation and decapsulation as the message travels through the OSI layers.
 
-The center (purple) box is the message. As the message moves down the OSI stack, every layer wraps the data with it's own information (protocol headers and trailers). 
+The center (purple) box is the message. As the message moves down the OSI stack, every layer wraps the data (encapsulation) with it's own information (protocol headers and trailers). 
 
-So on the sender's end, this is what happens at each layer : 
+## At the Sender's end: Encapsulation
+
+The growing boxes in the animation represents encapsulation of data.
+
+This is what happens at each layer : 
 
 | Layer | What Happens |
 |------|-----------|
@@ -16,3 +19,10 @@ So on the sender's end, this is what happens at each layer :
 | Network Layer | IP header is added |
 | Data Link Layer | Frame header + trailer is added |
 | Physical Layer | The bits are sent on wire | 
+
+## At the Receiever's end: Decapsulation
+
+Each layer removes it's headers until the application receives the original message.
+
+Enjoy the animation!
+
