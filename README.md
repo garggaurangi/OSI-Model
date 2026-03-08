@@ -2,7 +2,7 @@
 
 I wrote this animation in C++ using graphics.h library to create a visual representation of the message encapsulation and decapsulation as the message travels through the OSI layers.
 
-You can also view the animation video (HERE)[https://youtu.be/MDQOEp-Ap5Y]
+You can also view the animation video [HERE](https://youtu.be/MDQOEp-Ap5Y)
 
 The center (purple) box is the message. As the message moves down the OSI stack, every layer wraps the data (encapsulation) with it's own information (protocol headers and trailers). 
 
